@@ -135,8 +135,7 @@ class TimelineComponent extends Component {
                           February 2014	-	June 2019. Bachelor of Computer Science.
                           <div className="timeline-entries">
                             <div className="timeline-entry-chip">                            
-                            <Chip
-                              href="https://unipe.edu.br/enade/wp-content/uploads/2018/06/Resultado-ENADE-2017.pdf">
+                            <Chip href="https://unipe.edu.br/enade/wp-content/uploads/2018/06/Resultado-ENADE-2017.pdf">
                               Third place at Enade's Assessment </Chip>
                             </div>                            
                           </div>
