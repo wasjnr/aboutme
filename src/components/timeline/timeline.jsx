@@ -56,7 +56,7 @@ class TimelineComponent extends Component {
 
     handleReduce3 = () => {
       this.setState({expanded3: false});
-    };
+    };    
     render() {
         return (
             <div className="timeline">
@@ -126,18 +126,19 @@ class TimelineComponent extends Component {
                       </div>
                       </CardText>
                   </Card>
-                 </div> 
+                 </div>                
                 <div className="timeline-entry">
                   <Card expanded={this.state.expanded3} onExpandChange={this.handleExpandChange3}>
                       <CardHeader title="Student" subtitle="Unipê - Centro Universitário de João Pessoa"
                         actAsExpander={true} showExpandableButton={true}/>
                       <CardText expandable={true}>
                           February 2014	-	June 2019. Bachelor of Computer Science.
-
                           <div className="timeline-entries">
-                            <div className="timeline-entry-chip">
-                              <Chip>Third place at Enade's Assessment </Chip>
-                            </div>
+                            <div className="timeline-entry-chip">                            
+                            <Chip
+                              href="https://unipe.edu.br/enade/wp-content/uploads/2018/06/Resultado-ENADE-2017.pdf">
+                              Third place at Enade's Assessment </Chip>
+                            </div>                            
                           </div>
                       </CardText>
                   </Card>

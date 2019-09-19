@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ArrowIcon from 'material-ui/svg-icons/hardware/keyboard-arrow-down';
-const scrollTo = require('scroll-to');
 import './header.css';
+const scrollTo = require('scroll-to');
+
 
 class HeaderComponent extends Component {
     constructor(props) {

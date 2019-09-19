@@ -16,11 +16,11 @@ class FooterComponent extends Component {
     return (
       <div className="footer">
         <div className="link-list">
-          <a target="_blank" href="https://github.com/wasjnr">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/wasjnr">
             Github
           </a>          
            /             
-          <a target="_blank" href="https://linkedin.com/in/was-dutra/">
+          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/was-dutra/">
             LinkedIn
           </a>
         </div>

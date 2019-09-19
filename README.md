@@ -7,8 +7,8 @@ This version [aboutme](https://wasjnr.github.io/aboutme/) is under construction 
 
 ## Installation
 
-1. Run `npm i`.
-2. Run `npm start`.
+1. Run `yarn install`.
+2. Run `yarn start`.
 3. Visit [localhost:3000](http://localhost:3000).
 
 
