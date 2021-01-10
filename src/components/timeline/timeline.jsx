@@ -74,13 +74,7 @@ class TimelineComponent extends Component {
     render() {
         return (
             <div className="timeline">
-              <p className="headline">Working experience</p>
-                <div className="timeline-entry">
-                  <Card>
-                      <CardHeader title="Administrative Assistant" subtitle="Engenhos Gourmet"/>
-                      
-                  </Card>
-                </div>
+              <p className="headline">Working experience</p>               
                 <div className="timeline-entry">
                     <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
                       <CardHeader title="Software Engineer" subtitle="Lieno Tecnologia - PbHub Soluções"
