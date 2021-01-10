@@ -34,6 +34,10 @@ class TimelineComponent extends Component {
       this.setState({expanded3: expanded3});
     };
 
+    handleExpandChange4 = (expanded4) => {
+      this.setState({expanded3: expanded4});
+    };
+
     handleExpand = () => {
       this.setState({expanded: true});
     };
@@ -46,6 +50,10 @@ class TimelineComponent extends Component {
       this.setState({expanded3: true});
     };
 
+    handleExpand4 = () => {
+      this.setState({expanded: true});
+    };
+
     handleReduce = () => {
       this.setState({expanded1: false});
     };
@@ -56,7 +64,12 @@ class TimelineComponent extends Component {
 
     handleReduce3 = () => {
       this.setState({expanded3: false});
-    };    
+    }; 
+
+    handleReduce4 = () => {
+      this.setState({expanded4: false});
+    };     
+
     render() {
         return (
             <div className="timeline">
@@ -67,12 +80,47 @@ class TimelineComponent extends Component {
                       
                   </Card>
                 </div>
+                <div className="timeline-entry">
+                    <Card expanded={this.state.expanded4} onExpandChange={this.handleExpandChange}>
+                        <CardHeader title="Software Engineer" subtitle="Lieno Tecnologia - PbHub Soluções"
+                          actAsExpander={true} showExpandableButton={true}/>
+                        <CardText expandable={true}>
+                            January 2020 - Present. 
+                            Development of features and MVP's to Multiples Clients.
+                            <br/><br/>
+                              <div className="timeline-entries">
+                                <div className="timeline-entry-chip">
+                                  <Chip>Python</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Java</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Javascript</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>React</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>SQL</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Git</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Css</Chip>
+                                </div>                                
+                              </div>
+                        </CardText>
+                    </Card>
+                  </div>
                   <div className="timeline-entry">
                     <Card expanded={this.state.expanded1} onExpandChange={this.handleExpandChange}>
                         <CardHeader title="Software Developer" subtitle="Unipê - Centro Universitário de João Pessoa"
                           actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            February 2018 - June 2018. Development of Microservices to Coordenadoria de Tecnologia da 
+                            February 2018 - June 2018. 
+                            Development of Microservices to Coordenadoria de Tecnologia da 
                             Informação da Polícia Militar da Paraíba.
                             <br/><br/>
                               <div className="timeline-entries">
@@ -103,7 +151,8 @@ class TimelineComponent extends Component {
                       <CardHeader title="Volunteer Software Developer" subtitle="Unipê - Centro Universitário de João Pessoa"
                         actAsExpander={true} showExpandableButton={true}/>
                       <CardText expandable={true}>
-                        February 2017 - June 2017. Development of Microservices to Fábrica de Software - UBTech.
+                        February 2017 - June 2017. 
+                        Development of Microservices to Fábrica de Software - UBTech.
                       <div className="timeline-entries">
                         <div className="timeline-entry-chip">
                           <Chip>Python</Chip>
